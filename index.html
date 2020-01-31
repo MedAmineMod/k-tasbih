@@ -657,13 +657,24 @@
 </script>
 <!-- MOBILE NAVIGATIONS -->
 <script>
-$('.bead-controllers').hide()
-$('.space-controllers').hide()
+  var windowW =  window.innerWidth;
+
+  if (windowW < 768) {
+  $('.bead-controllers').hide()
+  $('.space-controllers').hide()
+  }
   $('.mainBeads .bordertitle').click(function () {
-    $('.bead-controllers').toggle("slow")
+    var windowW =  window.innerWidth;
+    console.log(windowW);
+    if (windowW < 768) {
+      $('.bead-controllers').toggle("slow")
+    }
   });
   $('.spacersC .spacerConfborder').click(function () {
-    $('.space-controllers').toggle("slow")
+    var windowW = window.innerWidth ;
+    if (windowW < 768) {
+      $('.space-controllers').toggle("slow")
+    }
   });
 </script>
 
