@@ -1,0 +1,327 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+body {
+	font-family: 'Poppins', sans-serif;
+	overflow: hidden;
+}
+html {
+	overflow: hidden;
+}
+.cards .card img {
+	max-height: 88px;
+}
+.cards1 .card img {
+	max-height: 88px;
+}
+.cards .card:hover {
+	border: 1px solid #00339986;
+}
+.content {
+	height: 100vh;
+}
+.addTocart:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.addTocart {
+	position: absolute;
+	bottom: 0;
+	height: 7vh;
+	line-height: 7vh;
+	text-align: center;
+	color: white;
+	background-color: #374761;
+	max-width: 100%;
+	width: 50%;
+	border-radius: 0!important;
+	padding: 5px;
+	margin: 1px;
+}
+.title {
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+	color: #707070;
+	margin: 0;
+}
+.sizeTitle {
+	font-size: 14px;
+	font-weight: 500;
+	text-align: left;
+	color: rgb(000, 000, 000, 0.6);
+	margin: 0;
+}
+.beadSize {
+	height: 9vh;
+}
+.fw600 {
+	font-weight: 600;
+}
+.cardTitle {
+	font-size: 10px;
+	font-weight: 500;
+	text-align: left;
+	color: white
+}
+.card-overlay {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(000, 000, 000, 0.5);
+}
+.tab-pane {
+	height: 100%;
+	max-height: 31vh!important;
+	/* border-bottom: 1px solid rgb(112, 122, 122,0.6) ; */
+	overflow-y: auto;
+}
+.cards {
+	height: 100%;
+	/* overflow-y: scroll; */
+}
+.card {
+	width: 22%;
+	height: 90px;
+}
+.startingCard.card:hover {
+	cursor: pointer;
+}
+.startingCard.card {
+	max-width: 45%;
+	width: 100%;
+	height: auto;
+	-webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	border: 0;
+}
+.startingCard.card.active {
+	border: 1px solid #003399;
+}
+.card.active {
+	border: 1px solid #003399;
+}
+.btn.active {
+	color: #003399;
+}
+.card-img,
+.card-img-top {
+	border-top-left-radius: 0!important;
+	border-top-right-radius: 0!important;
+}
+.card-header {
+	padding: 0;
+}
+.card-body {
+	padding: 0!important;
+}
+.fz12 {
+	font-size: 11px;
+}
+.fw500 {
+	font-weight: 500;
+}
+.inactive {
+	color: rgb(112, 122, 122, 0.6)
+}
+.leftMenu {
+	width: 25%;
+	height: 100vh;
+	border-right: 1px solid rgb(112, 122, 122, 0.6);
+	border-left: 1px solid rgb(112, 122, 122, 0.6);
+}
+.rightMenu {
+	width: 25%;
+	height: 100vh;
+	border-right: 1px solid rgb(112, 122, 122, 0.6);
+	border-left: 1px solid rgb(112, 122, 122, 0.6);
+}
+.bordertitle {
+	border-top: 1px solid rgb(112, 122, 122, 0.6);
+	border-bottom: 1px solid rgb(112, 122, 122, 0.6);
+	height: 5.4vh;
+}
+.bordertitle .title {
+	line-height: 5.4vh;
+}
+.spacerConfborder {
+	height: 5vh;
+	border-bottom: 1px solid rgb(112, 122, 122, 0.6);
+	border-top: 1px solid rgb(112, 122, 122, 0.6);
+}
+.spacerConfborder .title {
+	line-height: 5vh;
+}
+.threeContent {
+	width: 50%;
+	height: auto;
+}
+.bead-controllers,
+.space-controllers {
+	height: 45vh;
+	/* overflow-y: scroll; */
+}
+.bead-controllers select,
+.space-controllers select {
+	font-size: 0.8em;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	color: #003399!important;
+	font-weight: 600!important;
+	border-bottom: 1px solid #003399!important;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+.nav-item {
+	text-align: center;
+	text-transform: uppercase;
+}
+#myTab li {
+	width: 25%;
+}
+#myTab a {
+	color: rgb(0, 0, 0, 0.6);
+	font-weight: 500;
+	font-size: 11px;
+}
+.card {
+	border-radius: 0!important;
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+	border: none;
+	color: #60749c!important;
+}
+/* @media (min-width: 992px) and (max-width: 1200px) {
+
+    .title {
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+        color: #707070;
+        margin: 0;
+    }
+    .sizeTitle {
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .nav-link {
+        display: block;
+        padding: 0.1rem;
+        text-align: center;
+    }
+    .card {
+        width: 40%;
+        height: 90px;
+    }
+    .cardTitle {
+        font-size: 13px;
+        font-weight: 400;
+        text-align: center;
+        color: white;
+    }
+    .startingCard.card{
+        width:90%;
+    }
+  } */
+
+@media only screen and (max-width: 1200px) {
+	.title {
+		font-size: 12px;
+		font-weight: 600;
+		text-align: center;
+		color: #707070;
+		margin: 0;
+	}
+	.sizeTitle {
+		font-size: 13px;
+		font-weight: 600;
+	}
+	.nav-link {
+		display: block;
+		padding: 0.1rem;
+		text-align: center;
+	}
+	.card {
+		width: 40%;
+		height: 90px;
+	}
+	.cardTitle {
+		font-size: 13px;
+		font-weight: 400;
+		text-align: center;
+		color: white;
+	}
+	.startingCard.card {
+		max-width: 90%;
+	}
+}
+@media only screen and (max-width: 767.98px) {
+	.mobileMenu {
+		position: absolute;
+		top: 50vh;
+		height: 40px;
+		border: 1px solid grey;
+	}
+	.threeContent {
+		position: absolute;
+		top: 0vh;
+		height: 50vh;
+		width: 100%;
+		background-color: brown;
+	}
+	.addTocart {
+		position: absolute;
+		width: 100%;
+		top: calc(100vh - 40px);
+		margin: 0;
+		height: 40px;
+		line-height: 30px;
+	}
+	.leftMenu {
+		position: absolute;
+		top: calc(50vh + 40px);
+		height: calc(50vh - 80px);
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		width: 100%;
+		overflow-y: auto;
+		padding-bottom: 10px;
+	}
+	.rightMenu {
+		position: absolute;
+		top: calc(50vh + 40px);
+		height: calc(50vh - 80px);
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		width: 100%;
+		overflow-y: scroll;
+		display: none;
+	}.btn.focus, .btn:focus {
+    box-shadow: none
+  }
+	.startingCard.card {
+		max-width: 40%;
+	}
+	.card {
+		width: 20%;
+		height: 90px;
+	}
+	.cards img {
+		height: 69px;
+		width: 69px;
+		padding: 5px;
+	}
+	.mobileOption {
+		color: white;
+		background-color: #374761;
+		border-radius: 0!important;
+	}
+	.mobileBeadsandSpacers {
+		border-radius: 0!important;
+	}
+}
