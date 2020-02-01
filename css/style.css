@@ -16,6 +16,9 @@ html {
 .cards .card:hover {
 	border: 1px solid #00339986;
 }
+.cards1 .card:hover {
+	border: 1px solid #00339986;
+}
 .content {
 	height: 100vh;
 }
