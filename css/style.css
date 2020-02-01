@@ -37,6 +37,11 @@ html {
 	padding: 5px;
 	margin: 1px;
 }
+.addTocart  img{
+	height: 2.5vh;
+	margin-right: 10PX;
+	margin-bottom: 7PX;
+}
 .title {
 	font-size: 14px;
 	font-weight: 500;
