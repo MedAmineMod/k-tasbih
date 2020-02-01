@@ -325,3 +325,16 @@ html {
 		border-radius: 0!important;
 	}
 }
+
+@media  (max-width: 425px) {
+.leftMenu	.startingcards{
+		height: 182px;
+		overflow-x: scroll;
+		/* width: 200vw; */
+		overflow-y: hidden;
+		flex-flow: column;
+	}
+	.startingcards.card{
+		    max-width: 43%;
+	}
+}
