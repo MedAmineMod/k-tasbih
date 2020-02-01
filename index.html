@@ -546,6 +546,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 <script>
+    var btnactive = $('.startingcards')
+    btnactive = btnactive.find('.btn')
     $('#myTab a').on('click', function(e) {
         e.preventDefault()
         $(this).tab('show')
@@ -555,14 +557,16 @@
     startingcards.click(function() {
         startingcards.removeClass('active');
         $(this).addClass('active');
+        // $(this).find('.btn').eq(0).addClass('active');
     });
-    var btnactive = $('.startingcards')
-    btnactive = btnactive.find('.btn')
+
     btnactive.click(function() {
-        btnactive.removeClass('active');
-        btnactive.addClass('inactive');
+
+
         $(this).addClass('active');
-        console.log($(this));
+        $(this).siblings('.btn').removeClass('active');
+        // $(this).addClass('active');
+        console.log();
     });
     //BEANS
     var bPlainCards = $('.bean-plain-cards')
