@@ -16,6 +16,9 @@ html {
 .cards .card:hover {
 	border: 1px solid #00339986;
 }
+.cards1 .card:hover {
+	border: 1px solid #00339986;
+}
 .content {
 	height: 100vh;
 }
@@ -79,8 +82,8 @@ html {
 	/* overflow-y: scroll; */
 }
 .card {
-	width: 22%;
-	height: 90px;
+	width: 21%;
+	height: 89px;
 }
 .startingCard.card:hover {
 	cursor: pointer;
@@ -308,14 +311,13 @@ html {
 		max-width: 40%;
 	}
 	.card {
-		width: 20%;
-		height: 90px;
+		width: 19%;
+		height: 80px;
 	}
 	.cards img {
-		height: 69px;
-		width: 69px;
-		padding: 5px;
-	}
+		height: 100%;
+		width: 100%;
+		}
 	.mobileOption {
 		color: white;
 		background-color: #374761;
