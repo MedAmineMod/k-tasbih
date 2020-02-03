@@ -27,7 +27,7 @@ html {
 	box-shadow: none;
 }
 .addTocart {
-	position: absolute;
+	position: sticky;
 	bottom: 0;
 	height: 7vh;
 	line-height: 7vh;
@@ -39,6 +39,8 @@ html {
 	border-radius: 0!important;
 	padding: 5px;
 	margin: 1px;
+	width:  100% ;
+	
 }
 .addTocart  img{
 	height: 2.5vh;
@@ -294,6 +296,10 @@ html {
 		margin: 0;
 		height: 40px;
 		line-height: 30px;
+		z-index: 55;
+		bottom: 0;
+		left: 0;
+
 	}
 	.leftMenu {
 		position: absolute;
