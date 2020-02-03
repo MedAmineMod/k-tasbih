@@ -113,6 +113,8 @@ html {
 }
 .btn.active {
 	color: #003399;
+	font-weight: 600;
+
 }
 .card-img,
 .card-img-top {
@@ -130,6 +132,9 @@ html {
 }
 .fw500 {
 	font-weight: 500;
+}
+.fw100 {
+	font-weight: 100;
 }
 .inactive {
 	color: rgb(112, 122, 122, 0.6)
@@ -318,6 +323,10 @@ html {
   }
 	.startingCard.card {
 		max-width: 40%;
+	}
+	.btn {
+		font-weight: 100!important;
+
 	}
 	.card {
 		width: 19%;

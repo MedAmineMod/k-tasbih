@@ -31,49 +31,57 @@
                     </div>
                     <div class=" startingcards d-flex justify-content-center flex-wrap">
                         <div class=" mt-1 mx-1 startingCard card active">
-                            <div class=" px-1 card-header bg-transparent fz12">CUSTOMIZE YOUR TASBIH</div>
-                            <img src="assests/img/Image.png" class="card-img-top" alt="...">
+                            <div class="st-card-main">
+                              <div class=" px-1 card-header bg-transparent fz12">CUSTOMIZE YOUR TASBIH</div>
+                              <img src="assests/img/Image.png" class="card-img-top" alt="...">
+                            </div>
                             <div class="card-body">
                                 <p class="m-0 px-1  fz12 ">33 WITH SPACERS</p>
                                 <div class="w-100 d-flex flex-row ">
-                                    <a href="#" class="btn active p-1  fz12 fw500">EASY MODE </a>
-                                    <a href="#" class="btn p-1  fz12 fw500">ADVANCE MODE </a>
+                                    <a href="#" class="btn active p-1  fz12 fw100">EASY MODE </a>
+                                    <a href="#" class="btn p-1  fz12 fw100">ADVANCE MODE </a>
                                 </div>
 
                             </div>
                         </div>
                         <div class="  mt-1 mx-1 startingCard card ">
+                          <div class="st-card-main">
                             <div class=" px-1 card-header bg-transparent fz12 ">CUSTOMIZE YOUR TASBIH</div>
                             <img src="assests/img/Image.png" class="card-img-top" alt="...">
+                          </div>
                             <div class="card-body">
                                 <p class="m-0 px-1  fz12 ">33 WITHOUT SPACERS</p>
                                 <div class="w-100 d-flex flex-row ">
-                                    <a href="#" class="btn p-1  fz12 fw500">EASY MODE </a>
-                                    <a href="#" class="btn p-1  fz12 fw500">ADVANCE MODE </a>
+                                    <a href="#" class="btn p-1  fz12 fw100">EASY MODE </a>
+                                    <a href="#" class="btn p-1  fz12 fw100">ADVANCE MODE </a>
                                 </div>
 
                             </div>
                         </div>
                         <div class="  mt-1 mx-1 startingCard card">
+                          <div class="st-card-main">
                             <div class=" px-1 card-header bg-transparent fz12 ">CUSTOMIZE YOUR TASBIH</div>
                             <img src="assests/img/Image.png" class="card-img-top" alt="...">
+                          </div>
                             <div class="card-body">
                                 <p class="m-0 px-1  fz12 ">99 WITH SPACERS</p>
                                 <div class="w-100 d-flex flex-row ">
-                                    <a href="#" class="btn p-1  fz12 fw500">EASY MODE </a>
-                                    <a href="#" class="btn p-1  fz12 fw500">ADVANCE MODE </a>
+                                    <a href="#" class="btn p-1  fz12 fw100">EASY MODE </a>
+                                    <a href="#" class="btn p-1  fz12 fw100">ADVANCE MODE </a>
                                 </div>
 
                             </div>
                         </div>
                         <div class="  mt-1 mx-1 startingCard card">
+                          <div class="st-card-main">
                             <div class=" px-1 card-header bg-transparent fz12 ">CUSTOMIZE YOUR TASBIH</div>
                             <img src="assests/img/Image.png" class="card-img-top" alt="...">
+                          </div>
                             <div class="card-body">
                                 <p class="m-0 px-1  fz12 ">99 WITHOUT SPACERS</p>
                                 <div class="w-100 d-flex flex-row ">
-                                    <a href="#" class="btn p-1  fz12 fw500">EASY MODE </a>
-                                    <a href="#" class="btn p-1  fz12 fw500">ADVANCE MODE </a>
+                                    <a href="#" class="btn p-1  fz12 fw100">EASY MODE </a>
+                                    <a href="#" class="btn p-1  fz12 fw100">ADVANCE MODE </a>
                                 </div>
 
                             </div>
@@ -100,11 +108,11 @@
                             <div class="w-100 mt-1">
                                 <div class="dropdown">
                                     <div class="p-1 select">
-                                      <span>Sizes</span>
+                                      <span class="beads-size-val">Sizes</span>
                                       <i class="fa fa-chevron-left"></i>
                                     </div>
                                     <input type="hidden" name="gender">
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu beads-ops ">
                                       <li id="6MM">6mm</li>
                                       <li id="8MM">8mm</li>
                                        <li id="12MM">12mm</li>
@@ -328,11 +336,11 @@
                             <div class="w-100 mt-1">
                                 <div class="dropdown">
                                     <div class="p-1 select">
-                                      <span>Sizes</span>
+                                      <span class="spacers-size-val">Sizes</span>
                                       <i class="fa fa-chevron-left"></i>
                                     </div>
                                     <input type="hidden" name="gender">
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu spacers-ops">
                                       <li id="6MM">6mm</li>
                                       <li id="8MM">8mm</li>
                                        <li id="12MM">12mm</li>
@@ -566,20 +574,21 @@
         e.preventDefault()
         $(this).tab('show')
     });
-    var startingcards = $('.startingcards')
-    startingcards = startingcards.find('.card')
-    startingcards.click(function() {
+    var stMain = $('.st-card-main')
+    var startingcards = stMain.parent('.card')
+    stMain.click(function() {
         startingcards.removeClass('active');
-        $(this).addClass('active');
-        // $(this).find('.btn').eq(0).addClass('active');
+        $(this).parent('.card').addClass('active');
+        btnactive.removeClass('active')
+        $(this).parent('.card').find('.btn').eq(0).addClass('active');
+        console.log(  $(this).parent('.card').find('.btn').eq(0));
 
     });
-      //Rida changes
     btnactive.click(function() {
         btnactive.removeClass('active');
-        btnactive.css("color","grey");
+        // btnactive.css("color","grey");
         $(this).addClass('active');
-        $(this).css("color","#003399");
+        // $(this).css("color","#003399");
 
         // $(this).addClass('active');
         console.log();
@@ -709,6 +718,17 @@ $('.dropdown').click(function () {
         $(this).find('.dropdown-menu').slideUp(300);
     });
 /*End Dropdown Menu*/
+
+$('.dropdown-menu.beads-ops li').click(function () {
+  var selectedOp  =  $(this).text()
+  console.log(selectedOp);
+  $('.beads-size-val').text(selectedOp)
+})
+$('.dropdown-menu.spacers-ops li').click(function () {
+  var selectedOp  =  $(this).text()
+  console.log(selectedOp);
+  $('.spacers-size-val').text(selectedOp)
+})
 </script>
 
 </html>
